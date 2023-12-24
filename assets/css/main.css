@@ -2312,6 +2312,7 @@ input, select, textarea {
 		#header h1 {
 			font-weight: 900;
 			margin: 0;
+			color:#000;
 		}
 
 			#header h1 span {
@@ -2636,7 +2637,8 @@ input, select, textarea {
 	padding-bottom:1em;
 }
 
-	#contact h2 {
+	#contact h2,
+	#contact p {
 		color:white;
 	}
 
