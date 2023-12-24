@@ -120,10 +120,6 @@ input, select, textarea {
 			border-bottom-color: transparent;
 		}
 
-	strong, b {
-		font-weight: 400;
-	}
-
 	p, ul, ol, dl, table, blockquote {
 		margin: 0 0 2em 0;
 	}
@@ -1789,6 +1785,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
+	input[type="time"],
 	textarea {
 		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -1799,7 +1797,7 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		background: none;
-		border: solid 1px rgba(124, 128, 129, 0.2);
+		border: solid 1px rgba(124, 128, 129, 0.8);
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -1812,13 +1810,17 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="date"]:focus,
+		input[type="time"]:focus,
 		textarea:focus {
 			border-color: #6e9440;
 		}
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"] {
+	input[type="email"],
+	input[type="date"],
+	input[type="time"] {
 		line-height: 1em;
 	}
 
@@ -2212,11 +2214,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #6e9440;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
+			background-color: #91b567;
 			color: #fff;
 		}
 
@@ -2527,12 +2525,6 @@ input, select, textarea {
 	}
 
 	#banner {
-		/* background-attachment: scroll, scroll, scroll, fixed; */
-		/* background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg"); */
-		/* background-position: bottom left, bottom right, top left, top center; */
-		/* background-repeat: no-repeat, no-repeat, repeat, no-repeat; */
-		/* background-size: 25em, 25em, auto, cover; */
 		background-attachment: scroll;
 		background: url("/images/seating.jpg") no-repeat;
 		background-size:cover;
@@ -2599,9 +2591,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
-		background-position: top left, top right, bottom left, bottom right;
-		background-repeat: no-repeat;
+		background: #1a3f38;
+		background: url('/images/cacti.jpg');
 		background-size: 25em;
 		padding: 7em 0;
 	}
@@ -2629,26 +2620,42 @@ input, select, textarea {
 /* CTA Hours/Address/Contact */
 
 	#cta {
-		/* background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover; */
-		/* background:linear-gradient(to top right, #002600, #718271, #e9e3c5); */
-		color: #000;
+		color: #052909;
 		padding: 5em;
 		text-align: center;
 	}
 
-		#cta header {
-			margin-bottom: 2em;
-		}
+	/* icons within section */
+	#cta span {
+		color:rgb(33, 122, 33);
+		font-size:.8em;
+	}
+
+
+/* Contact Us Page */
+#contact {
+	background: #1a3f38;
+	background-size: 25em;
+	padding-bottom:1em;
+}
+
+	#contact h2 {
+		color:white;
+	}
+
+	#contact p {
+		width:60%;
+		text-align:center;
+		margin:0 auto;
+	}
+
 
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
+		/* background: #8c9e8c;
+		color:#fff; */
+		background: #e8f4ee;
 		color: #7c8081;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
@@ -3158,7 +3165,7 @@ input, select, textarea {
 			}
 
 			p {
-				text-align: justify;
+				text-align: center;
 			}
 
 		/* Section/Article */
@@ -3348,18 +3355,19 @@ input, select, textarea {
 }
 
 .menu-header {
-	background-color:#476029;
-	background:url("/images/banner2.jpg") no-repeat;
+	background:rgba(255, 255, 255, .5);
 	background-size:cover;
 	background-attachment: scroll;
+	text-align:center;
+	font-size:1.2em;
 }
 
 /* designing "The Garden Menu" title */
 .menu-header > h2 {
 	font-weight:900;
-	color:#fff;
+	color:#000;
 	font-size:3em;
-	text-shadow: -6px 6px #000;
+	text-shadow: -7px 2px #fff;
 }
 
 /* menu item description spacing */
@@ -3374,4 +3382,28 @@ input, select, textarea {
 /* make menu item names bold */
 .item-name {
 	font-weight:500;
+}
+
+#our-story p {
+	width: 70%;
+	margin:1.5em auto;
+	font-size:1.3em;
+	font-weight:500;
+}
+
+#our-story h2 {
+	font-weight:700;
+}
+
+#reserve {
+	background-color:#1a3f38;
+	background:#1a3f38 url('/images/planty.jpeg') no-repeat;
+	background-size:cover;
+	padding-bottom:7em;
+}
+
+#reserve h2 {
+	color:#8ca86a;
+	font-weight:700;
+	font-size:2em;
 }
