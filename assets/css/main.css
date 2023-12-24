@@ -233,7 +233,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
 			.container {
 				width: 100%;
 			}
@@ -3391,9 +3390,11 @@ input, select, textarea {
 
 #reserve {
 	background-color:#1a3f38;
-	background: url('/images/planty.jpeg') no-repeat;
+	background: url('/images/plant.jpg') no-repeat;
 	background-size:cover;
-	padding-bottom:7em;
+	background-position:right bottom;
+	padding:7em 0;
+	background-attachment:fixed;
 }
 
 #reserve h2 {
