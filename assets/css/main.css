@@ -1810,7 +1810,7 @@ input, select, textarea {
 		input[type="date"]:focus,
 		input[type="time"]:focus,
 		textarea:focus {
-			border-color: #6e9440;
+			border-color: #476029;
 		}
 
 	input[type="text"],
@@ -2167,8 +2167,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		button.primary,
 		.button.primary {
-			background: #6e9440;
-			border-color: #6e9440;
+			background: #476029;
+			border-color: #476029;
 			color: #fff !important;
 		}
 
@@ -2230,7 +2230,7 @@ input, select, textarea {
 			.wrapper.style2 .button.primary {
 				background: #fff;
 				border-color: #fff;
-				color: #6e9440 !important;
+				color: #476029 !important;
 			}
 
 				.wrapper.style2 input[type="button"].primary:hover,
@@ -2343,7 +2343,7 @@ input, select, textarea {
 
 					#header nav ul li a {
 						border: solid 1px transparent;
-						color: inherit;
+						color: #000;
 						display: inline-block;
 						line-height: 1em;
 						padding: 0.6em 0.75em;
@@ -2471,7 +2471,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li:hover > a {
-				background: #6e9440;
+				background: #476029;
 				color: #fff;
 			}
 
