@@ -56,7 +56,7 @@ This repository hosts the code for The Garden Bistro website. The website aims t
   <a href="https://www.linkedin.com/in/raisa-d/">
     <img src="https://img.shields.io/badge/LinkedIn-046E6D?logo=linkedin&style=for-the-badge">
   </a>
-  <a href="https://twitter.com/rai__bread" target="blank">
-    <img src="https://img.shields.io/badge/Twitter-563d7c?logo=twitter&style=for-the-badge&logoColor=white" alt="rai__bread" />
+  <a href="https://linktr.ee/rai.dorzback" target="blank">
+    <img src="https://img.shields.io/badge/Linktree-563d7c?logo=twitter&style=for-the-badge&logoColor=white"/>
   </a> 
 </p>
